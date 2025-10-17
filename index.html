@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One Store | Moda Masculina</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  
+  <div class="floating-cart-summary" id="floatingCartSummary">
+    <span class="total-items-count" id="floatingCartCount">0 item(s)</span>
+    <span class="total-price" id="floatingCartTotal">R$ 0,00</span>
+    <button class="checkout-btn" id="floatingCartCheckout">Finalizar 🛒</button>
+  </div>
+  <header>
+    <div class="brand">
+      <div class="logo">1S</div>
+      <div class="brand-text">
+        <h1>One Store</h1>
+        <p>Moda Masculina</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+        <button class="view-cart-btn" id="viewCartBtn">Ver Carrinho</button> 
+        
+        <a href="#" class="cart-icon" id="cartIcon" aria-label="Carrinho de Compras">
+            🛒 <span id="cartCount" class="cart-count">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+
+    <nav id="navMenu">
+      <a href="#camisetas">Camisetas</a>
+      <a href="#polos">Polos</a>
+      <a href="#bones">Bonés</a>
+      <a href="#shorts">Shorts</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-container" id="carouselContainer">
+      <div class="slide" style="background-image:url('Polo1.jpg')">
+        <div class="slide-text">
+          <h2>Estilo Para Qualquer Ocasiao</h2>
+          <p>Shorts e camisetas leves para o seu treino diário</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('short2.jpg')">
+        <div class="slide-text">
+          <h2>Casual moderno</h2>
+          <p>Peças que combinam com qualquer ocasião</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('camisetas/img1.jpg')">
+        <div class="slide-text">
+          <h2>exclusivos</h2>
+          <p>Produtos De Qualidade</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-btn prev" id="prevBtn">‹</button>
+    <button class="carousel-btn next" id="nextBtn">›</button>
+  </section>
+
+  <main>
+    <section id="camisetas" class="categoria">
+        <h2>Camisetas</h2>
+        <div class="filter-controls" id="camisetasFilter">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="basica">Básicas</button>
+            <button class="filter-btn" data-filter="estampada">Estampadas</button>
+            <button class="filter-btn" data-filter="escura">Escuras</button>
+            <button class="filter-btn" data-filter="clara">Claras</button>
+        </div>
+        <div class="grid">
+             <div class="card" data-filter="basica escura">
+            
+                <div class="product-image" data-main-image="camisetas/Img1.jpg" style="background-image: url('camisetas/Img1.jpg');">
+                </div>
+
+                <div class="image-thumbnails">
+                    <img src="camisetas/Img1.jpg" alt="Vista frontal" data-image="camisetas/Img1.jpg" class="active-thumb">
+                    <img src="camisetas/img4.jpg" alt="Detalhe da gola" data-image="camisetas/img4.jpg">
+                    <img src="camisetas/img17.jpg" alt="Vista de costas" data-image="camisetas/img17.jpg">
+                </div>
+
+                <h3 data-name="Camiseta Peruana 40.1 (1)">Camiseta Peruana 40.1</h3>
+                <div class="product-options">
+                    <label for="size-c1">Tamanho:</label>
+                    <select id="size-c1" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="80.00">R$80,00</span>
+                <button class="btn-buy" data-id="c1">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="card" data-filter="estampada escura">
+              <img src="camisetas/Img2.jpg" alt="Camiseta estampada masculina">
+              <h3 data-name="Camiseta Peruana 40.1 (2)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c2">Tamanho:</label>
+                  <select id="size-c2" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c2">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img3.jpg" alt="Camiseta Slim Fit">
+              <h3 data-name="Camiseta Peruana 40.1 (3)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c3">Tamanho:</label>
+                  <select id="size-c3" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img4.jpg" alt="Camiseta Longline">
+              <h3 data-name="Camiseta Peruana 40.1 (4)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c4">Tamanho:</label>
+                  <select id="size-c4" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c4">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/Img5.jpg" alt="Camiseta Oversized">
+              <h3 data-name="Camiseta Peruana 40.1 (5)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c5">Tamanho:</label>
+                  <select id="size-c5" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+              <img src="camisetas/img6.jpg" alt="Camiseta Cinza Mescla">
+              <h3 data-name="Camiseta Peruana 40.1 (6)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c6">Tamanho:</label>
+                  <select id="size-c6" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c6">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica colorida">
+              <img src="camisetas/img7.jpg" alt="Camiseta Vermelha">
+              <h3 data-name="Camiseta Peruana 40.1 (7)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c7">Tamanho:</label>
+                  <select id="size-c7" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c7">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+              <img src="camisetas/img8.jpg" alt="Camiseta Branca Gola V">
+              <h3 data-name="Camiseta Peruana 40.1 (8)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c8">Tamanho:</label>
+                  <select id="size-c8" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c8">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img9.jpg" alt="Camiseta Azul Marinho">
+              <h3 data-name="Camiseta Peruana 40.1 (9)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c9">Tamanho:</label>
+                  <select id="size-c9" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c9">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img10.jpg" alt="Camiseta com Bolso">
+              <h3 data-name="Camiseta Peruana 40.1 (10)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c10">Tamanho:</label>
+                  <select id="size-c10" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c10">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img11.jpg" alt="Camiseta Preta Minimalista">
+              <h3 data-name="Camiseta Peruana 40.1 (11)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c11">Tamanho:</label>
+                  <select id="size-c11" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c11">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura colorida">
+              <img src="camisetas/img12.jpg" alt="Camiseta Verde Militar">
+              <h3 data-name="Camiseta Peruana 40.1 (12)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c12">Tamanho:</label>
+                  <select id="size-c12" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c12">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="estampada colorida">
+              <img src="camisetas/img13.jpg" alt="Camiseta Estampa Geométrica">
+              <h3 data-name="Camiseta Peruana 40.1 (13)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c13">Tamanho:</label>
+                  <select id="size-c13" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c13">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="estampada escura">
+              <img src="camisetas/img14.jpg" alt="Camiseta com Lettering">
+              <h3 data-name="Camiseta Peruana 40.1 (14)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c14">Tamanho:</label>
+                  <select id="size-c14" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c14">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+              <img src="camisetas/img15.jpg" alt="Camiseta de Algodão Pima">
+              <h3 data-name="Camiseta Peruana 40.1 (15)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c15">Tamanho:</label>
+                  <select id="size-c15" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c15">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+              <img src="camisetas/img16.jpg" alt="Camiseta Regata Esportiva">
+              <h3 data-name="Camiseta Peruana 40.1 (16)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c16">Tamanho:</label>
+                  <select id="size-c16" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c16">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img17.jpg" alt="Camiseta Manga Longa Básica">
+              <h3 data-name="Camiseta Peruana 40.1 (17)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c17">Tamanho:</label>
+                  <select id="size-c17" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c17">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="estampada colorida">
+              <img src="camisetas/img18.jpg" alt="Camiseta com Estampa Floral">
+              <h3 data-name="Camiseta Peruana 40.1 (18)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c18">Tamanho:</label>
+                  <select id="size-c18" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c18">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+              <img src="camisetas/img19.jpg" alt="Camiseta Henley">
+              <h3 data-name="Camiseta Peruana 40.1 (19)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c19">Tamanho:</label>
+                  <select id="size-c19" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c19">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="estampada colorida">
+              <img src="camisetas/img20.jpg" alt="Camiseta Tie Dye">
+              <h3 data-name="Camiseta Peruana 40.1 (20)">Camiseta Peruana 40.1</h3>
+              <div class="product-options">
+                  <label for="size-c20">Tamanho:</label>
+                  <select id="size-c20" class="product-size">
+                      <option value="P">P</option>
+                      <option value="M" selected>M</option>
+                      <option value="G">G</option>
+                      <option value="GG">GG</option>
+                  </select>
+              </div>
+              <span class="price" data-price="80.00">R$80,00</span>
+              <button class="btn-buy" data-id="c20">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="polos" class="categoria">
+        <h2>Camisetas Polo</h2>
+        <div class="grid">
+            <div class="card" data-filter="basica clara">
+                <img src="Polo1.jpg" alt="Polo Piquet Clássica">
+              <h3 data-name="Polo Piquet (1)">Polo Piquet Clássica</h3>
+                <div class="product-options">
+                    <label for="size-p1">Tamanho:</label>
+                    <select id="size-p1" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p1">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica escura">
+                <img src="Polo2.jpg" alt="Polo Slim Fit Preta">
+                <h3 data-name="Polo Slim Preta (2)">Polo Slim Fit Preta</h3>
+                <div class="product-options">
+                    <label for="size-p2">Tamanho:</label>
+                    <select id="size-p2" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p2">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="estampada colorida">
+                <img src="Polo3.jpg" alt="Polo Listrada Fio Egípcio">
+                <h3 data-name="Polo Listrada (3)">Polo Listrada Fio Egípcia</h3>
+                <div class="product-options">
+                    <label for="size-p3">Tamanho:</label>
+                    <select id="size-p3" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+                <img src="Polo4.jpg" alt="Polo Esportiva Dry-Fit">
+                <h3 data-name="Polo Dry-Fit (4)">Polo Esportiva Dry-Fit</h3>
+                <div class="product-options">
+                    <label for="size-p4">Tamanho:</label>
+                    <select id="size-p4" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p4">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica clara">
+                <img src="Polo5.jpg" alt="Polo Branca Básica">
+                <h3 data-name="Polo Branca (5)">Polo Branca Básica</h3>
+                <div class="product-options">
+                    <label for="size-p5">Tamanho:</label>
+                    <select id="size-p5" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card" data-filter="basica colorida">
+                <img src="Polo6.jpg" alt="Polo Texturizada Vinho">
+                <h3 data-name="Polo Texturizada (6)">Polo Texturizada Vinho</h3>
+                <div class="product-options">
+                    <label for="size-p6">Tamanho:</label>
+                    <select id="size-p6" class="product-size">
+                        <option value="P">P</option>
+                        <option value="M" selected>M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <span class="price" data-price="110.00">R$110,00</span>
+                <button class="btn-buy" data-id="p6">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="bones" class="categoria">
+        <h2>Bonés</h2>
+        <div class="grid">
+            </div>
+    </section>
+
+    <section id="shorts" class="categoria">
+      <h2>Shorts</h2>
+      <div class="grid">
+        <div class="card" data-filter="esportivo escura">
+          <img src="short1.jpg" alt="Short esportivo masculino">
+          <h3 data-name="Short Esportivo (1)">Short Esportivo</h3>
+          <div class="product-options">
+              <label for="size-s1">Tamanho:</label>
+              <select id="size-s1" class="product-size">
+                  <option value="P">P</option>
+                  <option value="M" selected>M</option>
+                  <option value="G">G</option>
+                  <option value="GG">GG</option>
+              </select>
+          </div>
+          <span class="price" data-price="90.00">R$90,00</span>
+          <button class="btn-buy" data-id="s1">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-filter="casual clara">
+          <img src="short2.jpg" alt="Short casual masculino">
+          <h3 data-name="Short Casual (2)">Short Casual</h3>
+          <div class="product-options">
+              <label for="size-s2">Tamanho:</label>
+              <select id="size-s2" class="product-size">
+                  <option value="38">38</option>
+                  <option value="40" selected>40</option>
+                  <option value="42">42</option>
+                  <option value="44">44</option>
+              </select>
+          </div>
+          <span class="price" data-price="90.00">R$90,00</span>
+          <button class="btn-buy" data-id="s2">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="card" data-filter="estampado colorida">
+            <img src="short3.jpg" alt="Short de Banho Estampado">
+            <h3 data-name="Short de Banho (3)">Short de Banho Estampado</h3>
+            <div class="product-options">
+                <label for="size-s3">Tamanho:</label>
+                <select id="size-s3" class="product-size">
+                    <option value="P">P</option>
+                    <option value="M" selected>M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </div>
+            <span class="price" data-price="90.00">R$90,00</span>
+            <button class="btn-buy" data-id="s3">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-filter="casual clara">
+            <img src="short4.jpg" alt="Short Chino Cáqui">
+            <h3 data-name="Short Chino (4)">Short Chino Cáqui</h3>
+            <div class="product-options">
+                <label for="size-s4">Tamanho:</label>
+                <select id="size-s4" class="product-size">
+                    <option value="38">38</option>
+                    <option value="40" selected>40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+            <span class="price" data-price="90.00">R$90,00</span>
+            <button class="btn-buy" data-id="s4">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-filter="esportivo escura">
+            <img src="short5.jpg" alt="Short de Moletom Cinza">
+            <h3 data-name="Short Moletom (5)">Short de Moletom Cinza</h3>
+            <div class="product-options">
+                <label for="size-s5">Tamanho:</label>
+                <select id="size-s5" class="product-size">
+                    <option value="P">P</option>
+                    <option value="M" selected>M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </div>
+            <span class="price" data-price="90.00">R$90,00</span>
+            <button class="btn-buy" data-id="s5">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card" data-filter="esportivo escura">
+            <img src="short6.jpg" alt="Short de Corrida com Bolso">
+            <h3 data-name="Short Corrida (6)">Short de Corrida com Bolso</h3>
+            <div class="product-options">
+                <label for="size-s6">Tamanho:</label>
+                <select id="size-s6" class="product-size">
+                    <option value="P">P</option>
+                    <option value="M" selected>M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </div>
+            <span class="price" data-price="90.00">R$90,00</span>
+            <button class="btn-buy" data-id="s6">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="categoria">
+        <h2>Sobre a One Store</h2>
+        <p>A **One Store** nasceu para oferecer roupas masculinas de alta qualidade, com estilo minimalista e conforto em cada detalhe. Nosso foco é a satisfação e a experiência de compra simplificada. Fazemos entregas em todo o Brasil!</p>
+        <p style="margin-top: 15px; font-size: 0.9em; color: #666;">*Esta é uma loja modelo e as transações são gerenciadas via WhatsApp.*</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        
+        <div class="footer-column brand-info">
+            <div class="brand">
+                <div class="logo">1S</div>
+                <div class="brand-text">
+                    <h3>One Store</h3>
+                    <p>Moda Masculina</p>
+                </div>
+            </div>
+            <p class="copyright">© 2025 One Store. Todos os direitos reservados.</p>
+        </div>
+        
+        <div class="footer-column contact-info">
+            <h4>Contate-nos</h4>
+            <ul>
+                <li><i class="fab fa-whatsapp"></i> WhatsApp: (11) 99999-9999</li>
+                <li><i class="fas fa-envelope"></i> Email: contato@onestore.com.br</li>
+                <li><i class="fas fa-map-marker-alt"></i> Brasil (Entrega em todo o país)</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column social-media">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+                <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/seuperfil" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/seuperfil" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://tiktok.com/@seuperfil" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="small-text">Siga-nos para novidades e promoções!</p>
+        </div>
+
+    </div>
+  </footer>
+
+  <button id="backToTopBtn" title="Voltar ao Topo">⬆</button>
+
+  <div id="customModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h3 id="modalTitle"></h3>
+      
+      <div id="modalCartItems" class="modal-cart-items"></div>
+      
+      <p id="modalBody"></p>
+      <button class="modal-btn" id="modalActionBtn">OK, Entendi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

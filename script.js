@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         orderDetails += "Por favor, me envie as opções de pagamento. Obrigado!";
 
         // IMPORTANTE: SUBSTITUA ESTE NÚMERO PELO SEU NÚMERO DE WHATSAPP REAL (55 + DD + Número)
-        const phoneNumber = "6798378390"; 
+        const phoneNumber = "67998378390"; 
 
         // Codifica a mensagem para URL
         const encodedMessage = encodeURIComponent(orderDetails);
